@@ -1,0 +1,377 @@
+{
+  "e3_strategies": {
+    "direct": {
+      "avg_time": 5544.791698455811,
+      "avg_tokens": 81.66666666666667,
+      "avg_confidence": 0.7858333333333333,
+      "details": [
+        {
+          "task": "翻译",
+          "time_ms": 721.8959331512451,
+          "tokens_out": 6,
+          "confidence": 0.9214,
+          "output_len": 11
+        },
+        {
+          "task": "提取",
+          "time_ms": 2756.6821575164795,
+          "tokens_out": 39,
+          "confidence": 0.4755,
+          "output_len": 71
+        },
+        {
+          "task": "分析",
+          "time_ms": 13155.797004699707,
+          "tokens_out": 200,
+          "confidence": 0.9606,
+          "output_len": 405
+        }
+      ]
+    },
+    "cot": {
+      "avg_time": 13558.348735173544,
+      "avg_tokens": 200.0,
+      "avg_confidence": 0.9632666666666667,
+      "details": [
+        {
+          "task": "翻译",
+          "time_ms": 13257.670164108276,
+          "tokens_out": 200,
+          "confidence": 0.965,
+          "output_len": 420
+        },
+        {
+          "task": "提取",
+          "time_ms": 13726.95517539978,
+          "tokens_out": 200,
+          "confidence": 0.9633,
+          "output_len": 330
+        },
+        {
+          "task": "分析",
+          "time_ms": 13690.420866012573,
+          "tokens_out": 200,
+          "confidence": 0.9615,
+          "output_len": 415
+        }
+      ]
+    },
+    "cod": {
+      "avg_time": 3265.2217547098794,
+      "avg_tokens": 44.666666666666664,
+      "avg_confidence": 0.9604333333333334,
+      "details": [
+        {
+          "task": "翻译",
+          "time_ms": 2830.486059188843,
+          "tokens_out": 39,
+          "confidence": 0.9584,
+          "output_len": 57
+        },
+        {
+          "task": "提取",
+          "time_ms": 4534.146070480347,
+          "tokens_out": 62,
+          "confidence": 0.9688,
+          "output_len": 98
+        },
+        {
+          "task": "分析",
+          "time_ms": 2431.033134460449,
+          "tokens_out": 33,
+          "confidence": 0.9541,
+          "output_len": 43
+        }
+      ]
+    }
+  },
+  "e5_token_efficiency": {
+    "短prompt": [
+      {
+        "confidence": 0.3,
+        "level": "none",
+        "original": 15,
+        "compressed": 15,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.5,
+        "level": "none",
+        "original": 15,
+        "compressed": 15,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.7,
+        "level": "none",
+        "original": 15,
+        "compressed": 15,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.9,
+        "level": "none",
+        "original": 15,
+        "compressed": 15,
+        "ratio": 1.0,
+        "savings_chars": 0
+      }
+    ],
+    "中等prompt": [
+      {
+        "confidence": 0.3,
+        "level": "none",
+        "original": 60,
+        "compressed": 60,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.5,
+        "level": "none",
+        "original": 60,
+        "compressed": 60,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.7,
+        "level": "none",
+        "original": 60,
+        "compressed": 60,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.9,
+        "level": "none",
+        "original": 60,
+        "compressed": 60,
+        "ratio": 1.0,
+        "savings_chars": 0
+      }
+    ],
+    "长prompt": [
+      {
+        "confidence": 0.3,
+        "level": "none",
+        "original": 819,
+        "compressed": 819,
+        "ratio": 1.0,
+        "savings_chars": 0
+      },
+      {
+        "confidence": 0.5,
+        "level": "light",
+        "original": 819,
+        "compressed": 651,
+        "ratio": 0.7948717948717948,
+        "savings_chars": 168
+      },
+      {
+        "confidence": 0.7,
+        "level": "moderate",
+        "original": 819,
+        "compressed": 483,
+        "ratio": 0.5897435897435898,
+        "savings_chars": 336
+      },
+      {
+        "confidence": 0.9,
+        "level": "aggressive",
+        "original": 819,
+        "compressed": 315,
+        "ratio": 0.38461538461538464,
+        "savings_chars": 504
+      }
+    ]
+  },
+  "e4_cache": {
+    "stats": {
+      "total_entries": 20,
+      "avg_quality": 0.586,
+      "high_quality_count": 5,
+      "low_quality_count": 2
+    }
+  },
+  "e1_routing": {
+    "accuracy": 0.8,
+    "correct": 8,
+    "total": 10,
+    "details": [
+      {
+        "task": "翻译",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.9659,
+        "tqbc_conf": 0.8718305027484894,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 10,
+        "time_ms": 941
+      },
+      {
+        "task": "分类情感",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.9539,
+        "tqbc_conf": 0.8561835157871245,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 149,
+        "time_ms": 10285
+      },
+      {
+        "task": "提取关键词",
+        "expected": "local",
+        "actual": "cloud",
+        "correct": false,
+        "quality": true,
+        "confidence": 0.4893,
+        "tqbc_conf": 0.22174129385501148,
+        "should_esc": true,
+        "strategy": "direct",
+        "tokens_out": 38,
+        "time_ms": 2800
+      },
+      {
+        "task": "排序",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.4781,
+        "tqbc_conf": 0.39148638515071066,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 108,
+        "time_ms": 7151
+      },
+      {
+        "task": "统计",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.7139,
+        "tqbc_conf": 0.5821933445334434,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 50,
+        "time_ms": 3111
+      },
+      {
+        "task": "分析原因",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.9581,
+        "tqbc_conf": 0.5642447429895401,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 200,
+        "time_ms": 11734
+      },
+      {
+        "task": "对比优缺点",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.9617,
+        "tqbc_conf": 0.54406657487154,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 200,
+        "time_ms": 11802
+      },
+      {
+        "task": "概括",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.9536,
+        "tqbc_conf": 0.3508989146351814,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 51,
+        "time_ms": 3199
+      },
+      {
+        "task": "设计微服务架构",
+        "expected": "cloud",
+        "actual": "local",
+        "correct": false,
+        "quality": true,
+        "confidence": 0.9565,
+        "tqbc_conf": 0.6450239136815071,
+        "should_esc": false,
+        "strategy": "cot",
+        "tokens_out": 200,
+        "time_ms": 11818
+      },
+      {
+        "task": "推理",
+        "expected": "local",
+        "actual": "local",
+        "correct": true,
+        "quality": true,
+        "confidence": 0.6829,
+        "tqbc_conf": 0.28425810888409614,
+        "should_esc": false,
+        "strategy": "direct",
+        "tokens_out": 200,
+        "time_ms": 11806
+      }
+    ]
+  },
+  "e2_learning": {
+    "checkpoints": [
+      {
+        "total": 10,
+        "accuracy": 0.0
+      },
+      {
+        "total": 25,
+        "accuracy": 0.04
+      },
+      {
+        "total": 50,
+        "accuracy": 0.06
+      },
+      {
+        "total": 100,
+        "accuracy": 0.09
+      },
+      {
+        "total": 150,
+        "accuracy": 0.1
+      },
+      {
+        "total": 200,
+        "accuracy": 0.09
+      },
+      {
+        "total": 250,
+        "accuracy": 0.096
+      },
+      {
+        "total": 300,
+        "accuracy": 0.1
+      },
+      {
+        "total": 350,
+        "accuracy": 0.09428571428571429
+      }
+    ]
+  }
+}

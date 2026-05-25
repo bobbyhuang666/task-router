@@ -1,0 +1,17 @@
+*.pyc
+__pycache__/
+results/
+tqbc_thompson.json
+*.egg-info/
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+config.yaml
+config.yml
+config.json
+

@@ -1,0 +1,89 @@
+# TaskRouter 配置文件示例
+# 复制为 config.yaml 并修改
+
+# ─── 本地模型设置 ───────────────────────────────────────────────
+local:
+  # 默认本地模型（Ollama 模型名称）
+  model: "qwen-tool"
+  # Ollama 服务地址
+  ollama_base: "http://localhost:11434"
+  # 最大输出 token 数
+  max_tokens: 2048
+  # 是否启用智能模型选择（根据任务类型自动选择最佳模型）
+  auto_select: true
+
+# ─── 云端 API 设置 ───────────────────────────────────────────────
+cloud:
+  # API 地址（留空则禁用云端路由）
+  api_url: ""
+  # API Key
+  api_key: ""
+  # 模型名称
+  model: ""
+  # 每 1000 输入 token 成本（美元）
+  cost_per_1k_input: 0.003
+  # 每 1000 输出 token 成本（美元）
+  cost_per_1k_output: 0.015
+  # 重试次数
+  max_retries: 2
+  # 熔断器：连续失败次数触发熔断
+  circuit_breaker_failures: 3
+  # 熔断器：冷却时间（秒）
+  circuit_breaker_cooldown: 120
+
+# ─── 缓存设置 ───────────────────────────────────────────────────
+cache:
+  # 缓存目录
+  dir: "~/.cache/task_router"
+  # 最大缓存条目数
+  max_entries: 1000
+  # 模糊匹配阈值 (0-1, 越高越严格)
+  fuzzy_threshold: 0.85
+  # TTL 分级（小时）
+  ttl_hours:
+    translation: 168        # 翻译：7天
+    classification: 168     # 分类：7天
+    extraction: 72          # 提取：3天
+    formatting: 168         # 格式化：7天
+    summarization: 24       # 摘要：1天
+    default: 48             # 默认：2天
+
+# ─── 路由设置 ───────────────────────────────────────────────────
+routing:
+  # 复杂度阈值（低于此值走本地，高于走云端）
+  # 注意：此值会被自适应阈值系统动态调整
+  base_threshold: 3.0
+  # 递归拆解的复杂度范围
+  recurse_score_min: 2.5
+  recurse_score_max: 7.0
+  # 最大递归深度
+  max_recurse_depth: 3
+
+# ─── 蒸馏设置 ───────────────────────────────────────────────────
+distillation:
+  # 是否启用蒸馏系统
+  enabled: true
+  # 自动采集云端响应
+  auto_collect: true
+  # Judge 高置信度阈值
+  judge_high_threshold: 0.9
+  # Judge 中等置信度阈值
+  judge_moderate_threshold: 0.5
+
+# ─── API 服务器设置 ─────────────────────────────────────────────
+server:
+  # 监听地址
+  host: "127.0.0.1"
+  # 监听端口
+  port: 8930
+  # 是否启用 CORS
+  cors: true
+
+# ─── 日志设置 ───────────────────────────────────────────────────
+logging:
+  # 日志级别: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+  # 日志文件（留空则输出到控制台）
+  file: ""
+  # 是否启用 JSON 格式日志
+  json_format: false

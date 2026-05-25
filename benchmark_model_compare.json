@@ -1,0 +1,206 @@
+{
+  "old": {
+    "model": "qwen-tool",
+    "tasks_total": 8,
+    "tasks_passed": 8,
+    "pass_rate": 1.0,
+    "total_time_ms": 12827,
+    "avg_time_ms": 1603.375,
+    "total_tokens_in": 263,
+    "total_tokens_out": 188,
+    "avg_confidence": 0.6001,
+    "logprobs_supported": true,
+    "details": [
+      {
+        "task": "翻译(英→中)",
+        "passed": true,
+        "time_ms": 852,
+        "tokens_in": 26,
+        "tokens_out": 11,
+        "confidence": 0.9671,
+        "margin": 0.5486,
+        "logprobs_count": 10,
+        "output_preview": "敏捷的棕熊跳过了懒惰的狗。"
+      },
+      {
+        "task": "JSON提取",
+        "passed": true,
+        "time_ms": 2331,
+        "tokens_in": 41,
+        "tokens_out": 37,
+        "confidence": 0.3147,
+        "margin": 0.011,
+        "logprobs_count": 27,
+        "output_preview": "```json\n{\n  \"name\": \"张三\",\n  \"id\": \"A001\",\n  \"dept\": \"研发部\"\n}\n```"
+      },
+      {
+        "task": "分类",
+        "passed": true,
+        "time_ms": 351,
+        "tokens_in": 28,
+        "tokens_out": 2,
+        "confidence": 0.8123,
+        "margin": 0.3823,
+        "logprobs_count": 1,
+        "output_preview": "positive"
+      },
+      {
+        "task": "摘要",
+        "passed": true,
+        "time_ms": 1338,
+        "tokens_in": 45,
+        "tokens_out": 19,
+        "confidence": 0.9362,
+        "margin": 0.4748,
+        "logprobs_count": 18,
+        "output_preview": "Python is a high-level, versatile programming language known for its readability and a robust ecosystem."
+      },
+      {
+        "task": "数学",
+        "passed": true,
+        "time_ms": 1827,
+        "tokens_in": 34,
+        "tokens_out": 27,
+        "confidence": 0.4555,
+        "margin": 0.116,
+        "logprobs_count": 20,
+        "output_preview": "17 * 23 + 45 / 9 = 391 + 5 = 396"
+      },
+      {
+        "task": "格式化",
+        "passed": true,
+        "time_ms": 2742,
+        "tokens_in": 34,
+        "tokens_out": 41,
+        "confidence": 0.3919,
+        "margin": 0.0686,
+        "logprobs_count": 36,
+        "output_preview": "| Fruit | Price |\n| :--- | :--- |\n| Apple | $1.2 |\n| Banana | $0.5 |\n| Cherry | $2.0 |"
+      },
+      {
+        "task": "关键词",
+        "passed": true,
+        "time_ms": 2419,
+        "tokens_in": 30,
+        "tokens_out": 38,
+        "confidence": 0.4893,
+        "margin": 0.1413,
+        "logprobs_count": 29,
+        "output_preview": "根据您提供的句子，提取的关键词如下：\n\n*   **人工智能**\n*   **医疗行业**\n*   **深度学习**\n*   **医学影像诊断**"
+      },
+      {
+        "task": "代码生成",
+        "passed": true,
+        "time_ms": 967,
+        "tokens_in": 25,
+        "tokens_out": 13,
+        "confidence": 0.4338,
+        "margin": 0.0998,
+        "logprobs_count": 10,
+        "output_preview": "def reverse_string(s):\n    return s[::-1]"
+      }
+    ]
+  },
+  "new": {
+    "model": "qwen3.5:0.8b",
+    "tasks_total": 8,
+    "tasks_passed": 7,
+    "pass_rate": 0.875,
+    "total_time_ms": 10980,
+    "avg_time_ms": 1372.5,
+    "total_tokens_in": 263,
+    "total_tokens_out": 151,
+    "avg_confidence": 0.67665,
+    "logprobs_supported": true,
+    "details": [
+      {
+        "task": "翻译(英→中)",
+        "passed": true,
+        "time_ms": 916,
+        "tokens_in": 26,
+        "tokens_out": 12,
+        "confidence": 0.938,
+        "margin": 1.0328,
+        "logprobs_count": 11,
+        "output_preview": "笨拙的狗跳过了笨拙的狐狸。"
+      },
+      {
+        "task": "JSON提取",
+        "passed": true,
+        "time_ms": 2363,
+        "tokens_in": 41,
+        "tokens_out": 37,
+        "confidence": 0.3147,
+        "margin": 0.011,
+        "logprobs_count": 27,
+        "output_preview": "```json\n{\n  \"name\": \"张三\",\n  \"id\": \"A001\",\n  \"dept\": \"研发部\"\n}\n```"
+      },
+      {
+        "task": "分类",
+        "passed": true,
+        "time_ms": 350,
+        "tokens_in": 28,
+        "tokens_out": 2,
+        "confidence": 0.8123,
+        "margin": 0.3823,
+        "logprobs_count": 1,
+        "output_preview": "positive"
+      },
+      {
+        "task": "摘要",
+        "passed": true,
+        "time_ms": 1592,
+        "tokens_in": 45,
+        "tokens_out": 19,
+        "confidence": 0.963,
+        "margin": 0.6172,
+        "logprobs_count": 18,
+        "output_preview": "Python is a high-level, versatile programming language widely known for its readability and broad ecosystem."
+      },
+      {
+        "task": "数学",
+        "passed": false,
+        "time_ms": 478,
+        "tokens_in": 34,
+        "tokens_out": 3,
+        "confidence": 0.8288,
+        "margin": 2.8525,
+        "logprobs_count": 2,
+        "output_preview": "69"
+      },
+      {
+        "task": "格式化",
+        "passed": true,
+        "time_ms": 2838,
+        "tokens_in": 34,
+        "tokens_out": 44,
+        "confidence": 0.399,
+        "margin": 0.0739,
+        "logprobs_count": 39,
+        "output_preview": "| Fruit | Price |\n| :--- | :--- |\n| Apple | $1.20 |\n| Banana | $0.50 |\n| Cherry | $2.00 |"
+      },
+      {
+        "task": "关键词",
+        "passed": true,
+        "time_ms": 1455,
+        "tokens_in": 30,
+        "tokens_out": 21,
+        "confidence": 0.7236,
+        "margin": 0.3161,
+        "logprobs_count": 20,
+        "output_preview": "提取关键词：**人工智能**、**医疗行业**、**深度学习**、**医学影像诊断**"
+      },
+      {
+        "task": "代码生成",
+        "passed": true,
+        "time_ms": 988,
+        "tokens_in": 25,
+        "tokens_out": 13,
+        "confidence": 0.4338,
+        "margin": 0.0998,
+        "logprobs_count": 10,
+        "output_preview": "def reverse_string(s):\n    return s[::-1]"
+      }
+    ]
+  }
+}

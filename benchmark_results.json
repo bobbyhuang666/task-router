@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-06-03T17:43:22",
+  "routing_accuracy": {
+    "baseline": 0.375,
+    "tqbc": 0.875
+  },
+  "token_savings_pct": 5.306122448979589,
+  "calibration_ece": {
+    "baseline": 0.1500000000000033,
+    "tqbc": 0.45784375000000044
+  },
+  "strategy_diversity": {
+    "baseline": 3,
+    "tqbc": 2
+  },
+  "cache_quality": {
+    "default_hit_rate": 0.23333333333333334,
+    "quality_hit_rate": 0.282,
+    "default_precision": 0.9428571428571428,
+    "quality_precision": 0.9408983451536643
+  },
+  "thompson_stats": {
+    "arms": {
+      "local": {
+        "n_observations": 7615,
+        "weights": [
+          1.7163,
+          1.7163,
+          0.0,
+          -6.132,
+          -6.132,
+          -6.132,
+          -29.0567,
+          0.0832,
+          0.8779,
+          0.0,
+          0.5132
+        ],
+        "weight_norm": 31.0488,
+        "avg_uncertainty": 3.6429
+      },
+      "cloud": {
+        "n_observations": 8385,
+        "weights": [
+          -1.2203,
+          -1.2203,
+          0.0,
+          0.1213,
+          0.1213,
+          0.1213,
+          0.1208,
+          0.0442,
+          0.2012,
+          0.0,
+          0.3767
+        ],
+        "weight_norm": 1.7948,
+        "avg_uncertainty": 2.772
+      }
+    },
+    "noise_var": 0.1,
+    "forgetting_factor": 0.995
+  }
+}

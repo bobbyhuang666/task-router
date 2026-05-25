@@ -1,0 +1,802 @@
+{
+  "summary": {
+    "total_tasks": 60,
+    "accuracy_pct": 95.0,
+    "conformal_coverage_pct": 98.3,
+    "cost_cloud": 0.001764,
+    "cost_actual": 0.000647,
+    "savings_pct": 63.3,
+    "elapsed_ms": 0.1
+  },
+  "by_category": {
+    "translation": {
+      "total": 12,
+      "correct": 11,
+      "cost_cloud": 0.00035280000000000006,
+      "cost_actual": 8.82e-05
+    },
+    "classification": {
+      "total": 10,
+      "correct": 10,
+      "cost_cloud": 0.00029400000000000004,
+      "cost_actual": 8.82e-05
+    },
+    "code": {
+      "total": 12,
+      "correct": 10,
+      "cost_cloud": 0.00035280000000000006,
+      "cost_actual": 0.00020580000000000004
+    },
+    "analysis": {
+      "total": 10,
+      "correct": 10,
+      "cost_cloud": 0.00029400000000000004,
+      "cost_actual": 0.00011760000000000001
+    },
+    "creative": {
+      "total": 8,
+      "correct": 8,
+      "cost_cloud": 0.00023520000000000005,
+      "cost_actual": 8.82e-05
+    },
+    "extraction": {
+      "total": 8,
+      "correct": 8,
+      "cost_cloud": 0.00023520000000000005,
+      "cost_actual": 5.8800000000000006e-05
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 24,
+      "correct": 24
+    },
+    "medium": {
+      "total": 22,
+      "correct": 19
+    },
+    "hard": {
+      "total": 14,
+      "correct": 14
+    }
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T02",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T03",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T04",
+      "category": "translation",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T05",
+      "category": "translation",
+      "difficulty": "medium",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T06",
+      "category": "translation",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T07",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T08",
+      "category": "translation",
+      "difficulty": "medium",
+      "ground_truth": "cloud",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": false,
+      "conformal_in_set": false
+    },
+    {
+      "id": "T09",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T10",
+      "category": "translation",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T11",
+      "category": "translation",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "T12",
+      "category": "translation",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C01",
+      "category": "classification",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C02",
+      "category": "classification",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C03",
+      "category": "classification",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C04",
+      "category": "classification",
+      "difficulty": "medium",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C05",
+      "category": "classification",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C06",
+      "category": "classification",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C07",
+      "category": "classification",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C08",
+      "category": "classification",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C09",
+      "category": "classification",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "C10",
+      "category": "classification",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G01",
+      "category": "code",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G02",
+      "category": "code",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G03",
+      "category": "code",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G04",
+      "category": "code",
+      "difficulty": "medium",
+      "ground_truth": "cloud",
+      "predicted": "local",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": false,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G05",
+      "category": "code",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G06",
+      "category": "code",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G07",
+      "category": "code",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G08",
+      "category": "code",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G09",
+      "category": "code",
+      "difficulty": "medium",
+      "ground_truth": "local",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": false,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G10",
+      "category": "code",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G11",
+      "category": "code",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "G12",
+      "category": "code",
+      "difficulty": "medium",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A01",
+      "category": "analysis",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A02",
+      "category": "analysis",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A03",
+      "category": "analysis",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A04",
+      "category": "analysis",
+      "difficulty": "medium",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A05",
+      "category": "analysis",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A06",
+      "category": "analysis",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A07",
+      "category": "analysis",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A08",
+      "category": "analysis",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A09",
+      "category": "analysis",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "A10",
+      "category": "analysis",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R01",
+      "category": "creative",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R02",
+      "category": "creative",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R03",
+      "category": "creative",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R04",
+      "category": "creative",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R05",
+      "category": "creative",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R06",
+      "category": "creative",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R07",
+      "category": "creative",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "R08",
+      "category": "creative",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E01",
+      "category": "extraction",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E02",
+      "category": "extraction",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E03",
+      "category": "extraction",
+      "difficulty": "medium",
+      "ground_truth": "either",
+      "predicted": "local",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E04",
+      "category": "extraction",
+      "difficulty": "medium",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E05",
+      "category": "extraction",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E06",
+      "category": "extraction",
+      "difficulty": "easy",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E07",
+      "category": "extraction",
+      "difficulty": "medium",
+      "ground_truth": "local",
+      "predicted": "local",
+      "prediction_set": [
+        "local",
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    },
+    {
+      "id": "E08",
+      "category": "extraction",
+      "difficulty": "hard",
+      "ground_truth": "cloud",
+      "predicted": "cloud",
+      "prediction_set": [
+        "cloud"
+      ],
+      "correct": true,
+      "conformal_in_set": true
+    }
+  ]
+}

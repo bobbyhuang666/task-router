@@ -1,0 +1,8 @@
+FROM qwen3.5:0.8b
+
+# 最优参数（参数扫描结果：10/10 通过，1496ms 平均延迟）
+# 低温低 top_p = 更确定性输出 = 更快更准
+PARAMETER num_ctx 2048
+PARAMETER temperature 0.1
+PARAMETER top_p 0.7
+PARAMETER repeat_penalty 1.0
